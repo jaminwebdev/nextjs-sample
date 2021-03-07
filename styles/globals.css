@@ -1,16 +1,20 @@
 html,
-body {
+body > * {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  font-size: 62.5%;
 }
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --main-color: #2F4483;
+  --text-color: #444;
+}
+
+.appContainer {
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }

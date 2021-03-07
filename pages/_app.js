@@ -1,7 +1,12 @@
 import '../styles/globals.css'
+import '../styles/typography.css'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const MyApp = ({ Component, pageProps }) => {
+  return (
+    <main className="appContainer">
+      <Component {...pageProps} />
+    </main>
+  )
 }
 
 export default MyApp
