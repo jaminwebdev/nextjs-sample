@@ -1,3 +1,23 @@
 .homeContainer {
+  display: grid;
+  grid-template-columns: var(--default-grid-columns);
+}
+
+.headingContainer {
+  grid-column: full-start / full-end;
+  background-color: var(--main-color);
+  padding: 7.5rem 0;
+
+  display: grid;
+  grid-template-columns: var(--default-grid-columns);
+}
+
+.headingContainer h1 {
+  color: #fff;
   grid-column: center-start / center-end;
+}
+
+.contentContainer {
+  grid-column: center-start / center-end;
+  padding: 5rem 0;
 }

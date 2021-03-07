@@ -3,9 +3,7 @@ import '../styles/typography.css'
 
 const MyApp = ({ Component, pageProps }) => {
   return (
-    <main className="appContainer">
       <Component {...pageProps} />
-    </main>
   )
 }
 
